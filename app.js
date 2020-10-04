@@ -6,7 +6,7 @@ const io = require('socket.io')(server);
 
 app.use(cors());
 
-io.origins(['https://mh-jsramverk.me:443']);
+io.origins(['https://mh-jsramverk.me/chat:443']);
 
 io.on('connection', function (socket) {
     socket.on('user connected', function(user) {
