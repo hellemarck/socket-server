@@ -4,7 +4,7 @@ const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
-io.origins(['https://mh-jsramverk.me/chat:443']);
+io.origins(['https://mh-jsramverk.me:80']);
 
 io.on('connection', function (socket) {
     socket.on('user connected', function(user) {
