@@ -9,7 +9,7 @@ const dsn = "mongodb://localhost:27017/chat";
 
 app.use(cors());
 
-// io.origins(['https://mh-jsramverk.me:443']);
+io.origins(['https://mh-jsramverk.me:443']);
 
 io.on('connection', function (socket) {
 
